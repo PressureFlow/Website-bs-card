@@ -90,6 +90,7 @@ export default {
     border: 1px solid grey;
     height: 500px;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .js-images-content img {
@@ -98,4 +99,5 @@ export default {
     border-radius: 20px;
     padding: 10px;
 }
+
 </style>
