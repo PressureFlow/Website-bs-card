@@ -117,6 +117,7 @@ canvas {
 .detail p,
 h1 {
 	font-family: 'Montserrat', sans-serif;
+
 }
 
 .page {
@@ -134,12 +135,7 @@ h1 {
 	overflow: hidden;
 	margin-bottom: 4rem;
 }
-.detail p,
-h1,
-button {
-	position: relative;
-	z-index: 2;
-}
+
 .detail::before {
 	content: ' ';
 	display: block;
@@ -280,6 +276,58 @@ footer .container {
 	.footer-col {
 		width: 50%;
 		margin-bottom: 30px;
+	}
+	.navbar a {
+		font-size: small;
+	}
+	.navbar a:hover {
+		transform: scale(1);
+		
+	}
+	.detail h1 {
+		font-size: 50px;
+		line-height: 45px;
+	}
+	.detail p {
+		width: 100%;
+		word-wrap: break-word;
+		text-align: justify;
+		font-size: 20px;
+	}
+	.detail {
+		height: 500px;
+	}
+	
+	.card-detail {
+		position: absolute;
+		left: 0;
+		top: 120px;
+		padding: 0;
+		width: 374px;
+		text-align: justify;
+		margin: 20px;
+	}
+	.card-detail-image {
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		border: 0;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+		border-radius: 0;
+		
+	}
+	.card-detail-image img {
+		border: 0;
+		border-radius: 0;
+		min-height: 100px;
+		min-width: 100%;
+		transform: translateY(330px);
+		
+		
+		
+		
 	}
 }
 
