@@ -8,7 +8,10 @@
 					моих работах накопленных во время прохождения курсов в московском
 					университете "Синергия"
 				</p>
-				<button class="btn" @click="$router.push('/blog')">click</button>
+				<div class="btn-container">
+					<button class="btn" @click="$router.push('/blog')">click</button>
+				</div>
+
 			</div>
 
 			<div class="card-detail-image">
@@ -163,6 +166,7 @@ h1 {
 	padding: 4rem;
 	border-radius: 20px 100px;
 }
+
 .card-detail-image {
 	right: 9%;
 	top: 10%;
@@ -173,12 +177,13 @@ h1 {
 	width: 30%;
 	border-radius: 200px 20px;
 }
+
 .card-detail-image img {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  border-radius: 200px 20px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 200px 20px;
 }
 
 .detail h1 {
@@ -277,27 +282,41 @@ footer .container {
 		width: 50%;
 		margin-bottom: 30px;
 	}
+
 	.navbar a {
 		font-size: small;
 	}
+	.navbar .btn {
+		width: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 5px 30px;
+		font-size: small;
+
+	}
 	.navbar a:hover {
 		transform: scale(1);
-		
 	}
+
 	.detail h1 {
 		font-size: 50px;
 		line-height: 45px;
 	}
+
 	.detail p {
 		width: 100%;
 		word-wrap: break-word;
 		text-align: justify;
 		font-size: 20px;
 	}
+
 	.detail {
-		height: 500px;
+		height: 60vh;
+		margin: 0;
 	}
-	
+
 	.card-detail {
 		position: absolute;
 		left: 0;
@@ -307,6 +326,7 @@ footer .container {
 		text-align: justify;
 		margin: 20px;
 	}
+
 	.card-detail-image {
 		position: absolute;
 		width: 100%;
@@ -316,23 +336,44 @@ footer .container {
 		top: 0;
 		overflow: hidden;
 		border-radius: 0;
-		
+
 	}
+
 	.card-detail-image img {
 		border: 0;
 		border-radius: 0;
 		min-height: 100px;
 		min-width: 100%;
 		transform: translateY(330px);
-		
-		
-		
-		
+
+	}
+
+	.btn-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.card-detail .btn {
+		width: 200px;
 	}
 }
 
 @media (max-width: 574px) {
 	.footer-col {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer {
+		font-size: 12px;
+	}
+	.footer h4 {
+		font-size:4vw;
+		height: 50px;
+		
+	}
+	.footer-col h4::before {
 		width: 100%;
 	}
 }
