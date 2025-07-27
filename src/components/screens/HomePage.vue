@@ -318,7 +318,6 @@ footer .container {
 	}
 
 	.card-detail {
-		position: absolute;
 		left: 0;
 		top: 120px;
 		padding: 0;
