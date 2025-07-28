@@ -124,6 +124,33 @@ export default {
 		text-align: justify;
 		margin-bottom: 2vh;
 	}
-	
+	@media (max-width: 501px) {
+		.detail {
+			
+			margin-bottom: 2rem;
+		}
+		.card-detail-image, .card-detail {
+			width: 100%;
+		}
+		.card-detail {
+			display: block;
+			margin-top: 8rem;
+			
+		}
+		.card-detail-image {
+			overflow: hidden; 	
+			height: 100px;
+			position: absolute;
+			top: 0;
+			
+		}
+		.card-detail-image img {
+			min-height: 100px;
+			transform: translateY(80px);
+		}
+		.card-detail h1 {
+			font-size: 3rem;
+		}
+	}
 
 </style>
