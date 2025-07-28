@@ -66,38 +66,5 @@ export default {
 </script>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
-.container-technologies h1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.js-t-content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.js-images-content {
-    display: flex;
-    justify-content: center;
-    border: 1px solid grey;
-    height: 500px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.js-images-content img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    padding: 10px;
-}
 
 </style>
