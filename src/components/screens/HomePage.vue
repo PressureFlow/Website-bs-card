@@ -134,7 +134,7 @@ export default {
 		}
 		.card-detail {
 			display: block;
-			margin-top: 8rem;
+			margin: 8rem 1rem 8rem 1rem;
 			
 		}
 		.card-detail-image {
